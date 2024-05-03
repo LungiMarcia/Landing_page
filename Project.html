@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MorningCoffee</title>
+    <style>
+      body {
+        background-color: rgb(151, 156, 151);
+      }
+      h1 {
+        text-align: center;
+        color: darkolivegreen;
+        border: 1px solid green;
+        border-radius: 6px;
+        padding: 20px;
+        max-width: 50%;
+        display: block;
+        margin: 0 auto;
+      }
+      h2 {
+        text-align: center;
+        color: rgb(3, 11, 26);
+        font-weight: bold;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+        border-radius: 20px;
+      }
+      p {
+        text-align: center;
+        padding: 20px 300px 20px 300px;
+        font-size: 15px;
+        line-height: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 16px 24px;
+        font-size: 15px;
+        border: 1px solid #885df1;
+        border-radius: 30px;
+        background-color: bisque;
+        box-shadow: rgba (37, 39, 89, 0.8) 0px 8px 8px 0;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <strong>Life begins after Coffee!</strong>
+    </h1>
+    <h2>Don't start your day without it😊</h2>
+    <img
+      src="
+    https://insanelygoodrecipes.com/wp-content/uploads/2020/07/Cup-Of-Creamy-Coffee-800x530.png"
+      width="400"
+    />
+    <p>
+      <strong>Coffee</strong>
+      is a beloved beverage known for its ability to fine-tune your focus and
+      boost your energy levels. Many people depend on their daily cup of coffee
+      right when they wake up to get their day started on the right foot. In
+      addition to its energizing effects, coffee has been linked to a long list
+      of potential health benefits, giving you all the more reason to get
+      brewing.
+      <br />
+      <a
+        href="https://www.healthline.com/nutrition/top-evidence-based-health-benefits-of-coffee"
+        target="blank"
+        class="learn-more"
+        >👉Learn more on healthline</a
+      >
+    </p>
+    <button>Start your day with coffee</button>
+    <p>
+      This page was built by <strong><em>Lungile Simelane</em></strong>
+    </p>
+    <script>
+      function morningCoffee() {
+        let name = prompt("What is your name?");
+        let beverage = prompt("What is you favourate beverage?");
+        if (beverage === "coffee") {
+          alert(
+            "☕Cheers," +
+              " " +
+              name +
+              "!" +
+              " " +
+              "Enjoy the rest of your day☺️"
+          );
+        } else {
+          alert("Oops!" + " " + name + "." + " " + "Think again😉");
+        }
+      }
+      let startYourDayWithCoffee = document.querySelector("button");
+      startYourDayWithCoffee.addEventListener("click", morningCoffee);
+    </script>
+  </body>
+</html>
